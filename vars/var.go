@@ -1,6 +1,11 @@
 package vars
 
-import "MosaicImg/settings"
+import (
+	"MosaicImg/logger"
+	"MosaicImg/settings"
+	"MosaicImg/utils"
+	"os"
+)
 
 type (
 		DOWNLOAD struct {
@@ -43,4 +48,11 @@ func init(){
 	Headers = make(map[string]string)
 	Headers["Accept"] = "application/ "
 	Headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
+
+	if exist, _:=utils.PathExists(Download.Img_dir);!exist{
+		err := os.Mkdir(Download.Img_dir, 0755)
+		if err != nil{
+			logger.Log.Println("[ Error ] Create Img_dir Err, Check Your 'info.conf'")
+		}
+	}
 }

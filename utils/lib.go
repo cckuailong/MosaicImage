@@ -4,6 +4,7 @@ import (
 	"crypto/md5"
 	"fmt"
 	"io"
+	"os"
 )
 
 // Md5 func
@@ -11,6 +12,18 @@ func MD5(s string) (m string) {
 	h := md5.New()
 	_, _ = io.WriteString(h, s)
 	return fmt.Sprintf("%x", h.Sum(nil))
+}
+
+// Whether the dir exists
+func PathExists(path string) (bool, error) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true, nil
+	}
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	return false, err
 }
 
 // Whether first len of th two arrays is equal

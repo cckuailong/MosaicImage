@@ -13,7 +13,7 @@ import (
 func GetSearchRes(params url.Values)string{
 	resp, err := utils.Http_req(vars.Download.Web_url+vars.Download.Key_word, params, "GET", vars.Headers)
 	if err != nil{
-		logger.Log.Println("[GetSearchRes Error]")
+		logger.Log.Println("[ Error ] Get Search Result Err")
 	}
 	body, _ := ioutil.ReadAll(resp.Body)
 	return string(body)
@@ -32,15 +32,19 @@ func GetKey(text string)[]string{
 	return keys
 }
 
-func DownloadImg(keys []string)[]byte{
+func DownloadImg(keys []string){
 	for _, key := range(keys){
 		url := vars.Download.Img_url + key
 		resp, err := utils.Http_req(url, nil, "GET", vars.Headers)
 		if err != nil{
-			logger.Log.Println("[Download Error] Key: "+key)
+			logger.Log.Println("[ Error ] Download Err happens, Key: "+key)
 		}
 		body, _ := ioutil.ReadAll(resp.Body)
-		return body
+		suffix := utils.GetImgSuffix(body[:10])
+		img_name := utils.MD5(key)+suffix
+		if ioutil.WriteFile(vars.Download.Img_dir+img_name, body, 644) != nil{
+			logger.Log.Println("[ Warning ] Download Image Err, URI: "+url)
+		}
 	}
 
 }
@@ -54,4 +58,5 @@ func GetImg(page int){
 	}
 	text := GetSearchRes(params)
 	keys := GetKey(text)
+	DownloadImg(keys)
 }
