@@ -4,6 +4,7 @@ import (
 	"crypto/md5"
 	"fmt"
 	"io"
+	"math"
 	"os"
 )
 
@@ -12,6 +13,12 @@ func MD5(s string) (m string) {
 	h := md5.New()
 	_, _ = io.WriteString(h, s)
 	return fmt.Sprintf("%x", h.Sum(nil))
+}
+
+// Round the float64
+func Round(f float64, n int) float64 {
+	pow10_n := math.Pow10(n)
+	return math.Trunc((f+0.5/pow10_n)*pow10_n) / pow10_n
 }
 
 // Whether the dir exists
