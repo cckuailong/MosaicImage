@@ -1,7 +1,7 @@
 package main
 
 import (
-	"MosaicImg/utils"
+	"MosaicImg/modules"
 	"fmt"
 )
 
@@ -10,6 +10,7 @@ func main(){
 	//if err != nil{
 	//	return
 	//}
-	//modules.GetAvgHsv(img)
-	fmt.Println(utils.Round(1.454564646,3))
+	//h,s, v, err:=modules.GetAvgHsv(img)
+	//fmt.Println(h,s,v)
+	fmt.Println(modules.GetHsvList())
 }

@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55c8632e-f596-4969-8f20-eebda7c3dd0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/mosaicImg.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MosaicImg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MosaicImg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/info.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/info.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/39d196fc425da636d48842280bc4da52.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/40a4f9797ca1586074bbfbb40be35827.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/8e883c24e9207e747fd759e5ccc46486.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/a2a773c11a86000d8d95636eb3b74118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/b54957741b13924b8ad8327dca130ec7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/c32a68bbc18dcd34fbabff4808489c1e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/ce4defef2462e03f015f0b760b682430.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/dde6a6682ce52dfe5f2c292e95c337fe.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/e22427277107cd68b32bb101b460287e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/e9dc0318127cf1c0a071ee61853a4ca1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/eb22a769bc5a94755ff672b86fca8558.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/f7738991bd36f70509a9c7ebfd178244.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/0a8e21e1362e4b0c95d14c96be9e302e.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/do_image.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/colorsys.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/lib.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/lib.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/getImg.go" beforeDir="false" afterPath="$PROJECT_DIR$/modules/getImg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/mosaicImg.go" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mosaicImg.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +19,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/mosaicImg.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+            <state relative-caret-position="387">
+              <caret line="123" column="11" selection-start-line="123" selection-start-column="11" selection-end-line="123" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vars/var.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings/settings.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="e#18#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/colorsys.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
+            <state relative-caret-position="1292">
               <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
@@ -56,10 +58,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="266">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
-                <element signature="e#14#50#0" expanded="true" />
+                <element signature="e#14#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +70,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/lib.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="171">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/getImg.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+              <folding>
+                <element signature="e#17#152#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/info.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="76">
               <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
@@ -101,7 +115,7 @@
       <replace>uint32</replace>
     </replaceStrings>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -116,22 +130,22 @@
         <option value="$PROJECT_DIR$/settings/init.go" />
         <option value="$PROJECT_DIR$/logger/log.go" />
         <option value="$PROJECT_DIR$/var/var.go" />
-        <option value="$PROJECT_DIR$/settings/settings.go" />
         <option value="$PROJECT_DIR$/utils/http_client.go" />
         <option value="$PROJECT_DIR$/utils/do_image.go" />
         <option value="$PROJECT_DIR$/conf/info.conf" />
-        <option value="$PROJECT_DIR$/modules/getImg.go" />
         <option value="$PROJECT_DIR$/vars/var.go" />
         <option value="$PROJECT_DIR$/utils/colorsys.go" />
+        <option value="$PROJECT_DIR$/modules/getImg.go" />
         <option value="$PROJECT_DIR$/utils/lib.go" />
+        <option value="$PROJECT_DIR$/settings/settings.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/modules/mosaicImg.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="313" />
-    <option name="y" value="24" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="96" />
+    <option name="y" value="62" />
     <option name="width" value="1301" />
     <option name="height" value="744" />
   </component>
@@ -169,7 +183,17 @@
             <path>
               <item name="MosaicImg" type="b2602c69:ProjectViewProjectNode" />
               <item name="MosaicImg" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MosaicImg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MosaicImg" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MosaicImg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MosaicImg" type="462c0819:PsiDirectoryNode" />
+              <item name="vars" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,15 +283,15 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="313" y="24" width="1301" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32270917" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29584527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925372" weight="0.27876824" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925372" visible="true" weight="0.2277628" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -297,20 +321,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mian.go" />
     <entry file="file://$PROJECT_DIR$/../github.com/x-cray/logrus-prefixed-formatter/formatter.go" />
-    <entry file="file://$PROJECT_DIR$/settings/settings.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vars/var.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/http_client.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -338,58 +348,69 @@
     <entry file="file://$PROJECT_DIR$/imgs/0a8e21e1362e4b0c95d14c96be9e302e.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file:///usr/local/go/src/image/color/color.go" />
+    <entry file="file://$PROJECT_DIR$/utils/colorsys.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/info.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/getImg.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="374">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="e#17#152#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/image/color/color.go">
+    <entry file="file://$PROJECT_DIR$/settings/settings.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mosaicImg.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/colorsys.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="e#14#50#0" expanded="true" />
+            <element signature="e#18#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/lib.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="171">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/info.conf">
+    <entry file="file://$PROJECT_DIR$/vars/var.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="342">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="e#14#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mosaicImg.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="123" column="11" selection-start-line="123" selection-start-column="11" selection-end-line="123" selection-end-column="11" />
         </state>
       </provider>
     </entry>

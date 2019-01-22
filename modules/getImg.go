@@ -10,7 +10,7 @@ import (
 	"regexp"
 )
 
-func GetSearchRes(params url.Values)string{
+func getSearchRes(params url.Values)string{
 	resp, err := utils.Http_req(vars.Download.Web_url+vars.Download.Key_word, params, "GET", vars.Headers)
 	if err != nil{
 		logger.Log.Println("[ Error ] Get Search Result Err")
@@ -19,7 +19,7 @@ func GetSearchRes(params url.Values)string{
 	return string(body)
 }
 
-func GetKey(text string)[]string{
+func getKey(text string)[]string{
 	keys := []string{}
 	re := regexp.MustCompile(`app.page\["pins"\] = (.+?)\];`)
 	data := re.FindString(text)
@@ -32,7 +32,7 @@ func GetKey(text string)[]string{
 	return keys
 }
 
-func DownloadImg(keys []string){
+func downloadImg(keys []string){
 	for _, key := range(keys){
 		url := vars.Download.Img_url + key
 		resp, err := utils.Http_req(url, nil, "GET", vars.Headers)
@@ -56,7 +56,7 @@ func GetImg(page int){
 		"per_page":{"20"},
 		"wfl":{"1"},
 	}
-	text := GetSearchRes(params)
-	keys := GetKey(text)
-	DownloadImg(keys)
+	text := getSearchRes(params)
+	keys := getKey(text)
+	downloadImg(keys)
 }
