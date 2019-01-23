@@ -10,6 +10,7 @@ import (
 	"regexp"
 )
 
+// Get the Search result with the KeyWord
 func getSearchRes(params url.Values)string{
 	resp, err := utils.Http_req(vars.Download.Web_url+vars.Download.Key_word, params, "GET", vars.Headers)
 	if err != nil{
@@ -19,6 +20,7 @@ func getSearchRes(params url.Values)string{
 	return string(body)
 }
 
+// Get the key from the Search result
 func getKey(text string)[]string{
 	keys := []string{}
 	re := regexp.MustCompile(`app.page\["pins"\] = (.+?)\];`)
@@ -32,23 +34,27 @@ func getKey(text string)[]string{
 	return keys
 }
 
+// Download Images
 func downloadImg(keys []string){
 	for _, key := range(keys){
-		url := vars.Download.Img_url + key
-		resp, err := utils.Http_req(url, nil, "GET", vars.Headers)
+		uri := vars.Download.Img_url + key
+		resp, err := utils.Http_req(uri, nil, "GET", vars.Headers)
 		if err != nil{
 			logger.Log.Println("[ Error ] Download Err happens, Key: "+key)
+			continue
 		}
 		body, _ := ioutil.ReadAll(resp.Body)
 		suffix := utils.GetImgSuffix(body[:10])
 		img_name := utils.MD5(key)+suffix
 		if ioutil.WriteFile(vars.Download.Img_dir+img_name, body, 644) != nil{
-			logger.Log.Println("[ Warning ] Download Image Err, URI: "+url)
+			logger.Log.Println("[ Warning ] Download Image Err, URI: "+uri)
+			continue
 		}
 	}
 
 }
 
+// Get the Images
 func GetImg(page int){
 	params := url.Values{
 		"jn8pvql9":{""},

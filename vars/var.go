@@ -16,10 +16,11 @@ type (
 		}
 		IMGINFO struct{
 			Img_width    int
+			Img_height    int
 			Slice_size   int
 			Slice_width  int
 			Slice_height int
-			Diff         int
+			Diff         float64
 			Repeat       int
 		}
 	)
@@ -39,10 +40,11 @@ func init(){
 
 	mosaic_info := settings.Cfg.Section("MOSAIC_IMG")
 	ImgInfo.Img_width = mosaic_info.Key("IMG_WIDTH").MustInt(6000)
+	ImgInfo.Img_height = mosaic_info.Key("IMG_HEIGHT").MustInt(6000)
 	ImgInfo.Slice_size = mosaic_info.Key("SLICE_SIZE").MustInt(60)
 	ImgInfo.Slice_width = mosaic_info.Key("SLICE_WIDTH").MustInt(60)
 	ImgInfo.Slice_height = mosaic_info.Key("SLICE_HEIGHT").MustInt(60)
-	ImgInfo.Diff = mosaic_info.Key("DIFF").MustInt(10000)
+	ImgInfo.Diff = mosaic_info.Key("DIFF").MustFloat64(10000)
 	ImgInfo.Repeat = mosaic_info.Key("REPEAT").MustInt(6)
 
 	Headers = make(map[string]string)
