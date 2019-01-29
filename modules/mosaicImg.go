@@ -15,6 +15,7 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
+	"github.com/cckuailong/colorsys-go"
 )
 
 type HSVPR struct {
@@ -35,7 +36,7 @@ func getAvgHsv(img image.Image) (float64, float64, float64, error) {
 		for j:=0;j<height;j++{
 			pixel := img.At(i,j)
 			r, g, b ,_ := pixel.RGBA()
-			h, s, v := utils.Rgb2Hsv(r>>8,g>>8,b>>8)
+			h, s, v := colorsys.Rgb2Hsv(r>>8,g>>8,b>>8)
 			h /= 360
 			h_sum += h
 			s_sum += s
